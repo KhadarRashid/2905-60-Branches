@@ -1,8 +1,8 @@
 
 def camelcase():
 
-    # Getting the input and capitalizing first letter of every word
-    txt = input(" please enter something to be turned into camelCase").title() 
+    txt = instructions()
+
     # Splitting it into a list
     txtList = txt.split( )
     #Joining the list to get rid of whitespace
@@ -19,6 +19,11 @@ def banner():
     stars = '*' * len(message)
     print(f'{stars}\n{message}\n{stars}\n')
 
+
+def instructions():
+    # Getting the input and capitalizing first letter of every word
+    txt = input(" please enter something to be turned into camelCase").title() 
+    return txt
 
 banner()
 camelcase()
