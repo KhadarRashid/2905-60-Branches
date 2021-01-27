@@ -13,5 +13,12 @@ def camelcase():
     print(camelCase)
     return camelCase
 
+def banner():
+    """Display welcome banner"""
+    message = "CAMELCASE PROGRAM!!!"
+    stars = '*' * len(message)
+    print(f'{stars}\n{message}\n{stars}\n')
 
+
+banner()
 camelcase()
